@@ -554,7 +554,7 @@ export default function AdminResearchAnalyticsPage() {
                       <ImageIcon className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                  <p className="text-[11px] text-navy-400 mb-4">Relative fairness $J(x) = (\sum x_i)^2 / (n \sum x_i^2)$</p>
+                  <p className="text-[11px] text-navy-400 mb-4">Relative fairness: J(x) = (&Sigma; x_i)&sup2; / (n &Sigma; x_i&sup2;)</p>
                 </div>
                 <div className="h-56">
                   <ResponsiveContainer width="100%" height="100%">
@@ -589,7 +589,7 @@ export default function AdminResearchAnalyticsPage() {
                       <ImageIcon className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                  <p className="text-[11px] text-navy-400 mb-4">Worst-off consumer satisfaction $F_{\min} = \min(x_i / d_i)$</p>
+                  <p className="text-[11px] text-navy-400 mb-4">Worst-off consumer satisfaction: F_min = min(x_i / d_i)</p>
                 </div>
                 <div className="h-56">
                   <ResponsiveContainer width="100%" height="100%">
@@ -624,7 +624,7 @@ export default function AdminResearchAnalyticsPage() {
                       <ImageIcon className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                  <p className="text-[11px] text-navy-400 mb-4">Total microgrid satisfied demand $\sum x_i / \sum d_i$</p>
+                  <p className="text-[11px] text-navy-400 mb-4">Total microgrid satisfied demand: sum(x_i) / sum(d_i)</p>
                 </div>
                 <div className="h-56">
                   <ResponsiveContainer width="100%" height="100%">
@@ -659,7 +659,7 @@ export default function AdminResearchAnalyticsPage() {
                       <ImageIcon className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                  <p className="text-[11px] text-navy-400 mb-4">Percentage of generation utilized $(\sum x_i / S) \times 100$</p>
+                  <p className="text-[11px] text-navy-400 mb-4">Percentage of generation utilized: (sum(x_i) / S) &times; 100%</p>
                 </div>
                 <div className="h-56">
                   <ResponsiveContainer width="100%" height="100%">
@@ -694,7 +694,7 @@ export default function AdminResearchAnalyticsPage() {
                       <ImageIcon className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                  <p className="text-[11px] text-navy-400 mb-4">Unsatisfied energy need $\sum(d_i - x_i)$</p>
+                  <p className="text-[11px] text-navy-400 mb-4">Unsatisfied energy need: sum(d_i - x_i)</p>
                 </div>
                 <div className="h-56">
                   <ResponsiveContainer width="100%" height="100%">
@@ -729,7 +729,7 @@ export default function AdminResearchAnalyticsPage() {
                       <ImageIcon className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                  <p className="text-[11px] text-navy-400 mb-4">High-resolution nanosecond execution latency ($t$ in ms)</p>
+                  <p className="text-[11px] text-navy-400 mb-4">High-resolution execution latency (t in milliseconds)</p>
                 </div>
                 <div className="h-56">
                   <ResponsiveContainer width="100%" height="100%">
@@ -762,7 +762,7 @@ export default function AdminResearchAnalyticsPage() {
               <div className="space-y-1">
                 <strong className="block font-bold">Two-Phase DA-WPA Clearing Dynamics:</strong>
                 <p className="leading-relaxed">
-                  In Step 1 (Initial Allocation), consumers receive energy proportional to their weighted demand under strict individual demand caps ($x_i \le d_i$). In Step 2 (Iterative Residual Redistribution), any surplus energy released by capped consumers is deterministically redistributed to unsatisfied high-priority nodes until generation is exhausted.
+                  In Step 1 (Initial Allocation), consumers receive energy proportional to their weighted demand under strict individual demand caps (x_i &le; d_i). In Step 2 (Iterative Residual Redistribution), any surplus energy released by capped consumers is deterministically redistributed to unsatisfied high-priority nodes until generation is exhausted.
                 </p>
               </div>
             </div>
@@ -814,11 +814,11 @@ export default function AdminResearchAnalyticsPage() {
                     <tr>
                       <th className="px-4 py-3">Consumer Entity</th>
                       <th className="px-4 py-3 text-center">Priority Tier</th>
-                      <th className="px-4 py-3 text-center">Multiplier ($\omega_i$)</th>
-                      <th className="px-4 py-3 text-right">Requested ($d_i$)</th>
+                      <th className="px-4 py-3 text-center">Multiplier (&omega;_i)</th>
+                      <th className="px-4 py-3 text-right">Requested (d_i)</th>
                       <th className="px-4 py-3 text-right text-sky-600">Initial Share</th>
                       <th className="px-4 py-3 text-right text-emerald-600">Surplus Delta</th>
-                      <th className="px-4 py-3 text-right font-bold text-navy-900 dark:text-white">Final Allocated ($x_i$)</th>
+                      <th className="px-4 py-3 text-right font-bold text-navy-900 dark:text-white">Final Allocated (x_i)</th>
                       <th className="px-4 py-3 text-right text-slate-400">Unfulfilled</th>
                       <th className="px-4 py-3 text-center">Fulfillment Rate</th>
                     </tr>
@@ -881,17 +881,17 @@ export default function AdminResearchAnalyticsPage() {
             {/* Tariff Multipliers Overview */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="p-4 bg-white dark:bg-navy-900 rounded-2xl border border-navy-200 dark:border-navy-800 shadow-xs">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-navy-400">Base Reference Tariff ($P_{\text{ref}}$)</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-navy-400">Base Reference Tariff (P_ref)</span>
                 <div className="text-lg font-bold font-mono text-navy-900 dark:text-white mt-1">0.000095 ETH</div>
                 <span className="text-[11px] text-navy-500">Benchmark microgrid clearing floor</span>
               </div>
               <div className="p-4 bg-white dark:bg-navy-900 rounded-2xl border border-navy-200 dark:border-navy-800 shadow-xs">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600">Regulatory Floor ($P_{\min}$)</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600">Regulatory Floor (P_min)</span>
                 <div className="text-lg font-bold font-mono text-emerald-600 dark:text-emerald-400 mt-1">0.000070 ETH</div>
                 <span className="text-[11px] text-navy-500">Producer revenue preservation guard</span>
               </div>
               <div className="p-4 bg-white dark:bg-navy-900 rounded-2xl border border-navy-200 dark:border-navy-800 shadow-xs">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600">Regulatory Ceiling ($P_{\max}$)</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600">Regulatory Ceiling (P_max)</span>
                 <div className="text-lg font-bold font-mono text-rose-600 dark:text-rose-400 mt-1">0.000150 ETH</div>
                 <span className="text-[11px] text-navy-500">Anti-gouging consumer price cap</span>
               </div>
@@ -910,9 +910,9 @@ export default function AdminResearchAnalyticsPage() {
                 <div className="flex items-center justify-between mb-2">
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-navy-900 dark:text-white">
-                      Supply-Demand Ratio vs Calculated Tariff ($P(R)$)
+                      Supply-Demand Ratio vs Calculated Tariff P(R)
                     </h4>
-                    <p className="text-[11px] text-navy-400">Clamped between regulatory boundaries $[P_{\min}, P_{\max}]$</p>
+                    <p className="text-[11px] text-navy-400">Clamped between regulatory boundaries [P_min, P_max]</p>
                   </div>
                   <button
                     onClick={() => handleExportChartPng("chart-elasticity-curve", "Pricing_Elasticity_Curve")}
