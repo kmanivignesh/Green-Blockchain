@@ -161,7 +161,7 @@ export const ConsensusInspectorModal: React.FC<ConsensusInspectorModalProps> = (
       isOpen={isOpen}
       onClose={onClose}
       title="Ethereum Sepolia Network & Consensus Inspector"
-      maxWidth="max-w-4xl"
+      size="xl"
     >
       <div className="space-y-6 max-h-[75vh] overflow-y-auto pr-1">
         {/* 1. Live Latency & Network Header */}

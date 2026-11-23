@@ -292,7 +292,7 @@ export default function RegisterPage() {
                     variant="outline"
                     size="sm"
                     fullWidth
-                    onClick={connectWallet}
+                    onClick={() => connectWallet()}
                   >
                     Connect MetaMask Wallet
                   </Button>
